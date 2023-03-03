@@ -1,0 +1,8 @@
+tablice w c++
+
+tablica to zmienna ktora moze przechowywac wiecej niz 1 wartosc tego samego typu. Aby zdefiniowac tablice nalezy okreslic
+-nazwe tablicy
+-typ wartosci elementow ktore beda przechowywane w tablicy
+-liczbe elementow (rozmiar tablicy)
+
+definicja tablicy jednowymiarowej ma postac

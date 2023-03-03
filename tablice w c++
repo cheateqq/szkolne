@@ -6,3 +6,32 @@ tablica to zmienna ktora moze przechowywac wiecej niz 1 wartosc tego samego typu
 -liczbe elementow (rozmiar tablicy)
 
 definicja tablicy jednowymiarowej ma postac
+typ nazwa_tablicy[ilosc_ementow];
+int tab1[5];
+
+#include <iostream>
+
+using namespace std;
+const int N=5;
+int a[N];
+void wprowadz_dane(){
+    for(unsigned int i=0; i<N; i++){
+        cout<<"podaj dane nr "<<i<<": ";
+        cin>>a[i];
+    }
+    
+}
+void wyprowadz_dane(){
+    for(unsigned int i=0; i<N; i++){
+        cout<<"a["<<i<<"]= "<<a[i]<<endl;
+    }
+}
+int main()
+
+{
+    wprowadz_dane();
+    wyprowadz_dane();
+
+    return 0;
+}
+

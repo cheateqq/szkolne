@@ -14,6 +14,7 @@ int tab1[5];
 using namespace std;
 const int N=5;
 int a[N];
+int suma=0;
 void wprowadz_dane(){
     for(unsigned int i=0; i<N; i++){
         cout<<"podaj dane nr "<<i<<": ";
@@ -26,12 +27,37 @@ void wyprowadz_dane(){
         cout<<"a["<<i<<"]= "<<a[i]<<endl;
     }
 }
+void sumuj(){
+    for(unsigned int i=0; i<N; i++){
+        suma = suma + a[i];
+    }
+    cout<<"suma = "<<suma<<ednl;
+}
+void wypisz_zera(){
+    bool znaleziono_zero = false;
+    
+    for(int i = 0; i<N;++i){
+        if(a[i]==0){
+            znaleziono_zero=true;
+            cout<<"Zero pod indeksem tablicy == "<<i<<endl;
+        }
+    }
+    if(!znaleziono_zero){
+        cout<<"nie znaleziono zera"<<endl;
+    }
+}
+
+
+
+
 int main()
 
 {
     wprowadz_dane();
     wyprowadz_dane();
+    sumuj();
+    wypisz_zera();
+    
 
     return 0;
 }
-

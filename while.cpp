@@ -17,3 +17,21 @@ int main()
     
     cout<<endl<<"Uzbierana kwota: "<<suma_wplat;
 }
+
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a=25;
+    do{
+        cout<<a<<endl;
+        a--;
+    }
+    while(i>=1);
+    return 0 
+}

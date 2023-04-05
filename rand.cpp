@@ -27,3 +27,39 @@ int main(){
 	cout<<"Suma wartosci tablicy wynosi: "<<suma;
 	return 0;
 }
+
+#include <iostream>
+#include <cstdio>
+#include <ctime>
+#include <cstdlib>
+#include <windows.h>
+#include <time.h>
+#include <math.h>
+
+using namespace std;
+
+
+
+
+int main(){
+	cout<<"-.-.-.-.-.-.-.-.-.-.-.-.-.-Zwolnienie blokady-.-.-.-.-.-.-.-.-.-.-.-.-.-"<<endl;
+	int t[6],i,j,wylosowana;
+	srand(time(NULL));
+	
+	for(i=0;i<6;i++){
+		wylosowana=rand()%49+1;
+		
+	}
+	while (wylosowana==t[0]||wylosowana==t[1]||wylosowana==t[2]||wylosowana==t[3]||wylosowana==t[4]||wylosowana==t[5]){
+		wylosowana=rand()%49+1;
+
+	t[i]=wylosowana;
+	cout<<t[i]<<endl;
+}
+
+
+	return 0;
+	
+}
+
+
